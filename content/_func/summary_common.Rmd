@@ -9,13 +9,13 @@ netcdf_summary_1 <- function(df) {
 }
 
 netcdf_summary_2 <- function(df) {
-  df  %>%
+  df %>%
     group_by(platform_code) %>%
     summarise(profile_count = n(),
               min_profile_timestamp = min(profile_timestamp),
               max_profile_timestamp = max(profile_timestamp),
               obs_count = sum(obs_count),
-              longitude = first(longitude), latitude = first(latitude),
+              longitude2 = first(longitude), latitude2 = first(latitude),
               min_longitude = min(longitude), max_longitude = max(longitude),
               min_latitude = min(latitude), max_latitude = max(latitude)) %>%
     ungroup() %>%
@@ -47,8 +47,9 @@ get_loc_by_timespan <- function(lst, timespan){
 
 format_netcdf_summary_2 <- function(df) {
   df %>%
-    select(`Platform` = 1, `# Profiles` = 2, From = 3, To = 4,
-           `# Observations` = 5, `Lon` = 6, `Lat` = 7)
+    select(`Platform` = platform_code, `# Profiles` = profile_count,
+           From = min_profile_timestamp, To = max_profile_timestamp,
+           `# Observations` = obs_count, `Lon` = longitude2, `Lat` = latitude2)
 }
 
 create_sample_time_hist <- function(df, title) {
