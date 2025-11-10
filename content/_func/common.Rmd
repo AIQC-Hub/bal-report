@@ -12,7 +12,8 @@
 
 # Path
 rsc_dir <- "../../data"
-release_url <- "https://github.com/AIQC-Hub/bal-insitu-nrt-report/releases/download/v0.1.0"
+rsc_dir2 <- "../data"
+release_url <- "https://github.com/AIQC-Hub/bal-insitu-nrt-report/releases/download/v0.2.0"
 
 # Templates
 template_path <- "./_template"

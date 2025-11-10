@@ -26,7 +26,8 @@ var_label <- "Pres"
 
 ## 1. Basic Information
 ```{r, basic_info, results = 'asis'}
-res <- knitr::knit_expand(t_v_basic_info)
+src <- knitr::knit_expand(t_v_basic_info)
+res <- knitr::knit_child(text = src, quiet = TRUE)
 cat(res, sep = '\n')
 ```
 
