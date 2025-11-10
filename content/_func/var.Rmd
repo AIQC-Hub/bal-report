@@ -18,8 +18,8 @@ var_summary_1 <- function(df, var_x) {
 
 format_var_summary_1 <- function(df, var_name) {
   df %>%
-    select(`Platform` = 1, `# Obs` = 2,
-           `Min(X)` = 3, `Median(X)` = 4, `Mean(X)` = 5, `Max(X)` = 6) %>%
+    select(`Platform` = platform_code, `# Obs` = n,
+           `Min(X)` = min_x, `Median(X)` = median_x, `Mean(X)` = mean_x, `Max(X)` = max_x) %>%
     rename_with(~ gsub("X", var_name, .x, fixed = TRUE))
 }
 
