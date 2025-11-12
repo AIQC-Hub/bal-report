@@ -35,7 +35,8 @@ cat(res, sep = '\n')
 
 ## 2. Summary Statistics
 ```{r, summary_stats, results = 'asis'}
-src <- knitr::knit_expand(t_v_summary_stats, df=df_name)
+src <- knitr::knit_expand(t_v_summary_stats, df=df_name,
+                          df_qc1=df_qc1_name, df_qc4=df_qc4_name)
 res <- knitr::knit_child(text = src, quiet = TRUE)
 cat(res, sep = '\n')
 ```

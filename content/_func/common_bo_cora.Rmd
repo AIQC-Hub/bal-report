@@ -11,8 +11,8 @@ parquet_url <- file.path(release_url, parquet)
 parquet_qc1 <- "netcdf_cora_bo_2_summary_qc1.parquet"
 parquet_qc4 <- "netcdf_cora_bo_2_summary_qc4.parquet"
 df_name <- "df_bo_cora"
-df_q1_name <- "df_bo_cora_qc1"
-df_q4_name <- "df_bo_cora_qc4"
+df_qc1_name <- "df_bo_cora_qc1"
+df_qc4_name <- "df_bo_cora_qc4"
 df_filtered_name <- "df_bo_cora_filtered"
 df_qc1_filtered_name <- "df_bo_cora_qc1_filtered"
 df_qc4_filtered_name <- "df_bo_cora_qc4_filtered"
@@ -20,9 +20,9 @@ df_qc4_filtered_name <- "df_bo_cora_qc4_filtered"
 # Path
 rsc_dir <- "../../data/cora_bo"
 rsc_dir2 <- "../data/cora_bo"
-df_filtered_cache_name <- file.path(normalizePath(rsc_dir), paste0(df_filtered_name, ".rds"))
-df_filtered_qc1_cache_name <- file.path(normalizePath(rsc_dir), paste0(df_qc1_filtered_name, ".rds"))
-df_filtered_qc4_cache_name <- file.path(normalizePath(rsc_dir), paste0(df_qc4_filtered_name, ".rds"))
+df_filtered_cache_name <- NULL
+df_filtered_qc1_cache_name <- NULL
+df_filtered_qc4_cache_name <- NULL
 
 # Data frame
 bo_file_name <- file.path(rsc_dir, parquet)
