@@ -1,6 +1,6 @@
 # Summary Report for the Baltic Sea NRT and DM CTD Datasets
 
-Welcome to the site. Here, we provide a collection of resources and summary reports containing statistics and other relevant information about the datasets.
+The site provides a collection of resources and summary reports containing statistics and other relevant information about the datasets.
 
 ## Website
 
