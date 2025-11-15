@@ -20,9 +20,6 @@ df_qc4_filtered_name <- "df_bo_cora_qc4_filtered"
 # Path
 #rsc_dir <- "../../data/cora_bo"
 #rsc_dir2 <- "../data/cora_bo"
-df_filtered_cache_name <- NULL
-df_filtered_qc1_cache_name <- NULL
-df_filtered_qc4_cache_name <- NULL
 
 # Data frame
 bo_file_name <- file.path(rsc_dir, parquet)
@@ -46,15 +43,15 @@ time_span4_to <- 2024
 longitude_var_name <- "longitude"
 latitude_var_name <- "latitude"
 
-r_min_lon <- 6
-r_max_lon <- 28
-r_min_lat <- 54
-r_max_lat <-  66
+r_min_lon <- NULL
+r_max_lon <- NULL
+r_min_lat <- NULL
+r_max_lat <-  NULL
 
-r_excl_lon_bl <- 6
-r_excl_lat_bl <- 60
-r_excl_lon_tr <- 15
-r_excl_lat_tr <- 66
+r_excl_lon_bl <- NULL
+r_excl_lat_bl <- NULL
+r_excl_lon_tr <- NULL
+r_excl_lat_tr <- NULL
 
 # Platforms with multiple locations
 platform1 <- "EXO13346"
@@ -82,11 +79,11 @@ split_time_spans <- function(df) {
 }
 
 filer_locations <- function(df) {
-  filer_locations_common(df, r_min_lon, r_max_lon, r_min_lat, r_max_lat)
+  df
 }
 
 exclude_locations <- function(df) {
-  exclude_locations_common(df, r_excl_lon_bl, r_excl_lat_bl, r_excl_lon_tr, r_excl_lat_tr)
+  df
 }
 
 ```
