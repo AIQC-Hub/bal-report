@@ -54,9 +54,9 @@ r_excl_lon_tr <- 15
 r_excl_lat_tr <- 66
 
 # Platforms with multiple locations
-platform1 <- "UMFF9A13"
-platform2 <- "UMFNB1B3"
-platform3 <- "SMHIRR7"
+platform1 <- "SMHIRR7"
+platform2 <- "SMHIBY30"
+platform3 <- "FYN6900017"
 
 # Count variables for observation count density plots
 count1_1 <- "100"
