@@ -1,4 +1,4 @@
-Package: bal-insitu-nrt-report
+Package: bal-report
 Title: Summary Report for the Baltic Sea NRT and DM CTD Datasets
 Version: 0.3.1
 Authors@R: person("Takaya", "Saito", email = "takaya.saito@outlook.com", role = c("aut", "cre"))
